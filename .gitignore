@@ -1,0 +1,3 @@
+# ignore runtime and results files
+exec
+*.ppm
