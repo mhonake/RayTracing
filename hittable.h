@@ -2,7 +2,7 @@
 #ifndef HITTABLE_H
 #define HITTABLE_H
 
-#include "ray.h"
+#include "ray_tracing_constants.h"
 
 class hit_record
 {
@@ -27,7 +27,7 @@ class hittable
 public:
     virtual ~hittable() = default;
 
-    virtual bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) = 0;
+    virtual bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) const = 0;
 };
 
 #endif
